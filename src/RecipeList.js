@@ -12,12 +12,12 @@ function RecipeList({recipes, deleteRecipe}) {
       <table>
         <thead>
           <tr>
-            <td className="flex_1">Name</td>
-            <td className="flex_1">Cuisine</td>
-            <td className="flex_1">Photo</td>
-            <td className="flex_2">Ingredients</td>
-            <td className="flex_2">Preparation</td>
-            <td className="flex_1">Actions</td>
+            <th className="flex_1">Name</th>
+            <th className="flex_1">Cuisine</th>
+            <th className="flex_1">Photo</th>
+            <th className="flex_2">Ingredients</th>
+            <th className="flex_2">Preparation</th>
+            <th className="flex_1">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -37,3 +37,4 @@ function RecipeList({recipes, deleteRecipe}) {
 }
 
 export default RecipeList;
+
