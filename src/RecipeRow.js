@@ -3,7 +3,7 @@ import React from "react";
 // RecipeRow Component
 function RecipeRow({ recipe, index, deleteRecipe }) {
   return (
-    <div>
+    
     <tr>
       <td className="content_td">
         <p>{recipe.name}</p>
@@ -12,7 +12,7 @@ function RecipeRow({ recipe, index, deleteRecipe }) {
         <p>{recipe.cuisine}</p>
       </td>
       <td className="content_td">
-        <img src={recipe.photo} alt={recipe.name} style={{ width: '100px' }} />
+        <img src={recipe.photo} alt={recipe.name} style={{ width: "100px" }} />
       </td>
       <td className="content_td">
         <p>{recipe.ingredients}</p>
@@ -24,7 +24,7 @@ function RecipeRow({ recipe, index, deleteRecipe }) {
         <button name="delete" onClick={() => deleteRecipe(index)}>Delete</button>
       </td>
     </tr>
-  </div>
+  
 );
 }
 
