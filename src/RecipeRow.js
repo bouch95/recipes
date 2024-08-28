@@ -21,7 +21,7 @@ function RecipeRow({ recipe, deleteRecipe }) {
         <p>{recipe.preparation}</p>
       </td>
       <td className="content_td">
-        <button name="delete" onClick={() => deleteRecipe(index)}>Delete</button>
+        <button name="delete" onClick={deleteRecipe}>Delete</button>
       </td>
     </tr>
   
