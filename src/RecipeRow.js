@@ -1,7 +1,7 @@
 import React from "react";
 
 // RecipeRow Component
-function RecipeRow({ recipe, index, deleteRecipe }) {
+function RecipeRow({ recipe, deleteRecipe }) {
   return (
     
     <tr>

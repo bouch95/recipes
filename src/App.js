@@ -16,16 +16,15 @@ function App() {
       ...currentRecipes,
     ]);
   
-    const deleteRecipe = (indexToDelete) => {
-      const updatedRecipes = recipes.filter((_, index) => index !== indexToDelete);
-    setRecipes(updatedRecipes);
-  };
-  
-  
+    const deleteRecipe = (indexToDelete) => 
+      setRecipes((currentRecipes) => 
+        currentRecipes.filter((recipe, index) => index !== indexToDelete));
+      
+      
   return (
     <div className="App">
       <header><h1>Delicious Food Recipes</h1></header>
-      <RecipeList recipes={RecipeData} onDelete={deleteRecipe}/>
+      <RecipeList recipes={recipes} deleteRecipe={deleteRecipe}/>
       <RecipeCreate createRecipe={createRecipe} />
     </div>
   );

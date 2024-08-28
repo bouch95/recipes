@@ -27,6 +27,7 @@ function RecipeCreate({ createRecipe }) {
  
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(formData);
     createRecipe(formData);
     setFormData(initialRecipeData);
   };
