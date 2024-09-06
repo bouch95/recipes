@@ -25,7 +25,7 @@ function RecipeRow({ recipe, deleteRecipe }) {
       </td>
     </tr>
   
-);
+  );
 }
 
 export default RecipeRow;
